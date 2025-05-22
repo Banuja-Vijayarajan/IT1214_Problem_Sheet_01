@@ -21,19 +21,6 @@ public class ParkingLotSystem {
         }
     }
 
-    // ParkingLot class
-    static class ParkingLot {
-        private Vehicle[] vehicles = new Vehicle[5];
-        private int count = 0;
-
-        public void parkVehicle(Vehicle v) {
-            if (count < vehicles.length) {
-                vehicles[count++] = v;
-            } else {
-                System.out.println("Parking lot is full.");
-            }
-        }
-
     // Main method
     public static void main(String[] args) {
         ParkingLot lot = new ParkingLot();

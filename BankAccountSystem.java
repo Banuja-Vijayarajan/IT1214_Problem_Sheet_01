@@ -41,18 +41,7 @@ public class BankAccountSystem {
             }
         }
 
-        public void withdrawFromAccount(int accountNumber, double amount) {
-            for (int i = 0; i < count; i++) {
-                if (accounts[i].getAccountNumber() == accountNumber) {
-                    try {
-                        accounts[i].withdraw(amount);
-                        System.out.println("Withdrawn $" + amount + " from account " + accountNumber);
-                    } catch (IllegalArgumentException e) {
-                        System.out.println("Error: " + e.getMessage());
-                    }
-                    return;
-                }
-            }
+        
             System.out.println("Account not found: " + accountNumber);
         }
 

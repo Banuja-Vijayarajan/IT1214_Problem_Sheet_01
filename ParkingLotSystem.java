@@ -34,32 +34,6 @@ public class ParkingLotSystem {
             }
         }
 
-        public void removeVehicle(String licensePlate) {
-            boolean found = false;
-            for (int i = 0; i < count; i++) {
-                if (vehicles[i].getLicensePlate().equals(licensePlate)) {
-                    for (int j = i; j < count - 1; j++) {
-                        vehicles[j] = vehicles[j + 1];
-                    }
-                    vehicles[--count] = null;
-                    found = true;
-                    System.out.println("Vehicle removed: " + licensePlate);
-                    break;
-                }
-            }
-            if (!found) {
-                System.out.println("Vehicle not found.");
-            }
-        }
-
-        public void displayVehicles() {
-            System.out.println("Parked Vehicles:");
-            for (int i = 0; i < count; i++) {
-                System.out.println(vehicles[i]);
-            }
-        }
-    }
-
     // Main method
     public static void main(String[] args) {
         ParkingLot lot = new ParkingLot();

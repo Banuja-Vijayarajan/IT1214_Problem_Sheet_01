@@ -35,23 +35,7 @@ public class MovieBookingSystem {
                 System.out.println("All seats are booked.");
                 return;
             }
-            for (int i = 0; i < count; i++) {
-                if (tickets[i].getSeatNumber() == ticket.getSeatNumber()) {
-                    System.out.println("Seat " + ticket.getSeatNumber() + " is already booked.");
-                    return;
-                }
-            }
-            tickets[count++] = ticket;
-            System.out.println("Booked: " + ticket);
-        }
-
-        public void cancelTicket(int ticketNumber) {
-            for (int i = 0; i < count; i++) {
-                if (tickets[i].getTicketNumber() == ticketNumber) {
-                    for (int j = i; j < count - 1; j++) {
-                        tickets[j] = tickets[j + 1];
-                    }
-                    tickets[--count] = null;
+          
                     System.out.println("Canceled ticket #" + ticketNumber);
                     return;
                 }

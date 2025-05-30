@@ -16,19 +16,13 @@ public class BankAccountSystem {
             return accountNumber;
         }
 
-        public void withdraw(double amount) {
-            if (amount > balance) {
-                throw new IllegalArgumentException("Insufficient balance");
-            }
-            balance -= amount;
-        }
 
         public String toString() {
             return "Account: " + accountNumber + ", Holder: " + accountHolder + ", Balance: $" + balance;
         }
     }
 
-    // Bank class
+    
     static class Bank {
         private BankAccount[] accounts = new BankAccount[5];
         private int count = 0;

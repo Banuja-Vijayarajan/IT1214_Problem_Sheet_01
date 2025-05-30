@@ -1,6 +1,6 @@
 public class MovieBookingSystem {
 
-    // Ticket class
+
     static class Ticket {
         private int ticketNumber;
         private String customerName;
@@ -25,7 +25,7 @@ public class MovieBookingSystem {
         }
     }
 
-    // BookingSystem class
+
     static class BookingSystem {
         private Ticket[] tickets = new Ticket[10];
         private int count = 0;
@@ -51,7 +51,7 @@ public class MovieBookingSystem {
         }
     }
 
-    // Main method
+
     public static void main(String[] args) {
         BookingSystem system = new BookingSystem();
 
@@ -61,7 +61,7 @@ public class MovieBookingSystem {
 
         system.cancelTicket(2);
 
-        system.bookTicket(new Ticket(4, "David", 2)); // Re-book seat 2
+        system.bookTicket(new Ticket(4, "David", 2));
 
         system.displayTickets();
     }

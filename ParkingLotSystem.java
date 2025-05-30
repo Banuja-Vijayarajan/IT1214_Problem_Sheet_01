@@ -1,6 +1,6 @@
 public class ParkingLotSystem {
 
-    // Vehicle class
+    
     static class Vehicle {
         private String licensePlate;
         private String ownerName;
@@ -21,7 +21,7 @@ public class ParkingLotSystem {
         }
     }
 
-    // Main method
+    
     public static void main(String[] args) {
         ParkingLot lot = new ParkingLot();
 

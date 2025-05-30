@@ -1,6 +1,6 @@
 public class AttendanceSystem {
 
-    // Student class
+ 
     static class Student {
         private int studentId;
         private String name;
@@ -39,7 +39,7 @@ public class AttendanceSystem {
      }
     }
 
-    // Main method
+
     public static void main(String[] args) {
         Classroom classroom = new Classroom();
 
@@ -48,7 +48,7 @@ public class AttendanceSystem {
         classroom.addStudent(new Student(103, "Carol Lee", 10));
 
         classroom.updateAttendance(102, 16);
-        classroom.updateAttendance(104, 8); // Invalid ID
+        classroom.updateAttendance(104, 8);
 
         classroom.displayStudents();
  }

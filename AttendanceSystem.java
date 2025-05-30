@@ -50,6 +50,6 @@ public class AttendanceSystem {
         classroom.updateAttendance(102, 16);
         classroom.updateAttendance(104, 8);
 
-        classroom.displayStudents();
+       
  }
 }

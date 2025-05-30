@@ -39,11 +39,7 @@ public class BankAccountSystem {
             System.out.println("Account not found: " + accountNumber);
         }
 
-        public void displayAccounts() {
-            System.out.println("Bank Accounts:");
-            for (int i = 0; i < count; i++) {
-                System.out.println(accounts[i]);
-            }
+       
         }
     }
 
